@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Churrascometro|Dilley Andrade </title>
+</head>
+<body>
+    <div class="pt1">
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <img src="assets/img/white_logo.png" alt="logo Churrascometro">
+                </div>
+                <div class="titledescription">
+                    <h1 class=" currascometro text-center">CHURRASCÔMETRO</h1>
+                    <h6 class="text-center">CALCULATE IN A FEW STEPS THE QUANTITY OF MEAT AND DRINKS FOR YOUR BARBECUE.</h6>
+                </div>
+                <div class="flags">
+                    <a href="index.html"><img src="assets/img/brazil_flag.png" alt="Brazil_flag"></a>
+                    <a href="englishmode.html"><img src="assets/img/usa_flag.png" alt="Usa_flag"></a>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="pt2">
+        <div class="container">
+            <div class="infotext">
+                <h6 class="text-center">Buying the right amount of barbecue ingredients is not an easy task. Therefore,<br>
+                    I created a tool to help you with your shopping and make your barbecue even more delicious.               </h6>
+            </div>
+        </div>
+    </div>
+    <div class="pt3">
+        <div class="container">
+            <div class="form-information-result">
+                <div class="form">
+                    <div class="howmochneed">
+                        <div class="titlesform">
+                            <h1 class="text-center">How much do I need?</h1>
+                        </div>
+                        <h6 class="text-center">Enter the number of people <br>
+                            who will attend your barbecue and how many <br>
+                            hours will last on average.</h6>
+
+                    </div>
+                    <div class="titlesform">
+                        <h4 class="text-center">How many people will you invite?</h4>
+                    </div>
+                        
+                    
+                    <div class="form_man">
+                        <label for="inputman">Men:</label>
+                        <input id="inputman" type="number" placeholder="Enter the number of men" min="0" pattern="[0-9]">
+                    </div>
+                    <div class="form_woman">
+                        <label for="inputwoman">Women:</label>
+                        <input id="inputwoman" type="number" placeholder="Enter the number of women" min="0" pattern="[0-9]">
+                    </div>
+                    <div class="form_kid">
+                        <label for="inputkid">Kids:</label>
+                        <input id="inputkid" type="number" placeholder="Enter the number of kids" min="0" pattern="[0-9]">
+                    </div>
+                    <div class="titlesform">
+                        <h4 class="text-center">How long will your barbecue last?</h4>
+                    </div>
+                    <div class="form_time">
+                        <label for="inputtime">Duration:</label>
+                        <input id="inputtime" type="number" placeholder="How many hours will it last?" min="0" pattern="[0-9]">
+                    </div>
+                    <div class="titlesform">
+                        <h4 class="text-center">How many adults don't drink alcohol?</h4>
+                    </div>
+                    <div class="form_alcohol">
+                        <label for="inputnoalcohol">Do not drink:</label>
+                        <input id="inputnoalcohol" type="number" placeholder="adults who don't drink" min="0" pattern="[0-9]">
+                    </div>
+                    <div class="buttoncalculate text-center">
+                        <button onclick="calculate()"><img src="assets/img/parrilla_icon.png" alt="">CALCULATE BARBECUE</button>
+                    </div>
+                </div>
+                <div class="information">
+                    <div class="meatimage">
+                        <img class="img-fluid" src="assets/img/barbecue_image.jpg" alt="meat">
+                    </div>
+                    <div class="wewillneed">
+                        <h3>WE WILL HELP YOU <br>
+                            TO SEND BRASA <br>
+                            AT YOUR BARBECUE!</h3>
+                    </div>
+                    <div class="addinformations">
+                        <h6>Fill in the information, and you <br>
+                            We will indicate an ideal shopping list<br>
+                            for your barbecue.</h6>
+                    </div>
+                </div>
+                <div class="result">
+                    <div class="needtobuy">
+                        <h2 class="text-center">You will need to buy:</h2>
+                    </div>
+                    <div class="itens-results">
+                        <div class="meat-beer">
+                            <div class="meat-result">
+                                <img src="assets/img/meat_icon.png" alt="meat-icon">
+                                <div id="meatresult"></div>
+
+                            </div>
+
+                            <div class="beer-result">
+                                <img src="assets/img/beer_icon.png" alt="meat-icon">
+                                <div id="beerresult"></div>
+                            </div>
+                        </div>
+                        <div class="soda-coal">
+                            <div class="soda-result">
+                                <img src="assets/img/soda_icon.png" alt="meat-icon">
+                                <div id="sodaresult"></div>
+                            </div>
+
+                            <div class="coal-result">
+                                <img src="assets/img/coal_icon.png" alt="meat-icon">
+                                <div id="coalresult"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-result">
+                        <h4 class="text-center">NOW IS THE TIME TO PREPARE YOURS<br>
+                            PERFECT BARBECUE.</h4>
+                    </div>
+                    <div class="observation">
+                        <h6 class="text-center">*The values ​​shown are a mere estimate, and can be changed up or down according to the guests.</h6>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="buttonrecalculate text-center">
+                <button onclick="reset()"><img src="assets/img/parrilla_icon.png" alt="">CALCULATE AGAIN</button>
+            </div>
+        </div>
+    </div>
+    <div class="pt4">
+        <div class="container">
+            <div class="finalinformations">
+                <div class="parrilla-foto">
+                    <div class="parrilla-informations">
+                        <div class="parrilla">
+                            <img src="assets/img/black_logo.png" alt="logo">
+                        </div><!-- parrilla-->
+                        <div class="informations-down">
+                            <h6>Created to make life easier for those passionate about a good barbecue. <br>
+                                We always try to help those who want to have a barbecue of<br>
+                                quality, optimizing the purchases to be made.
+                                </h6>
+                        </div><!--information down -->
+                    </div><!--parrilla information -->
+                        <div class="foto-details">
+                                <div class="foto">
+                                    <img src="assets/img/my_picture.png" alt="foto">
+                                </div><!--foto -->
+                                <div class="contact">
+                                    <h6>Dilley Andrade/Fullstack developer</h6>
+                                </div><!--contact -->
+                                <div class="logos-social-media">
+                                    <a href="https://github.com/DilleyAndrade" target="_blank"><img src="assets/img/github_icon.png" alt="githublogo"></a>
+                                    <a href="https://www.linkedin.com/in/dilley-andrade-54a163146/" target="_blank"><img src="assets/img/linkedin_icon.png" alt="githublogo"></a>
+                                </div><!-- logos social media-->
+                            </div><!-- foto detail -->
+                        </div><!--parrilla foto -->
+                        <hr>
+                            <div class="copy">
+                                <h6 class="text-center">&copy; Copyright 2022 MeuBBQ. Developed by Dilley Andrade. All rights reserved.</h6>
+                            </div>
+            </div><!-- final informations--> 
+        </div><!-- container-->
+    </div><!-- pt4 -->
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/scriptenglish.js"></script>
+</body>
+</html>

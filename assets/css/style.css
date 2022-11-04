@@ -1,0 +1,292 @@
+@media only screen and (max-width: 1200px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .parrilla-foto{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .parrilla-informations{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+@media only screen and (max-width: 500px){
+
+    .result{
+        align-items: center;
+    }
+
+    .itens-results{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 478px){
+    
+    .titledescription .currascometro {
+        font-size: 3em;
+        font-family: gbebas;
+        color: #fcc55a;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    
+
+}
+
+@font-face {
+    font-family: gblack;
+    src: url(../fonts/Gotham-Black.otf);
+}
+
+@font-face {
+    font-family: gbebas;
+    src: url(../fonts/BebasNeueBold-w1w42.otf);
+}
+
+@font-face {
+    font-family: gbold;
+    src: url(../fonts/GothamBold.ttf);
+}
+
+@font-face {
+    font-family: gbook;
+    src: url(../fonts/GothamBook.ttf);
+}
+
+.pt1{
+    padding: 20px 0px;
+    background-color: #212121;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.titledescription h1{
+    font-size: 5em;
+    font-family: gbebas;
+    color: #fcc55a;
+}
+
+.titledescription h6{
+    font-family: gbook;
+    color: white;
+}
+
+/*pt2------------------------*/
+
+.pt2{
+    font-family: gbook;
+    padding: 15px 0px;
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(128, 128, 128, 0.507);
+}
+
+/*pt3--------------------------*/
+
+.pt3{
+    display: flex;
+    background-attachment:local;
+    color: white;
+    background-image: url(../img/background.jpg);
+}
+
+.form{
+    margin-top: 50px;
+    padding: 20px 70px;
+    background-color: #343434;
+}
+
+.form input{
+    margin: 10px 0px;
+    border-radius: 10px;
+    height: 50px;
+    width: auto;
+    text-indent: 1em;
+}
+
+.information{
+    margin-top: 50px;
+    background-color: #212121;
+}
+
+.titlesform{
+    font-family: gblack;
+    margin: 20px;
+    color: #fcc55a;
+}
+
+.titlesform h1{
+    font-family: gblack;
+}
+
+.titlesform h3{
+    font-family: gblack;
+}
+
+.howmochneed h6{
+    font-family: gbook;
+}
+
+.form_man, .form_woman, .form_kid, .form_time, .form_alcohol{
+    display: flex;
+    flex-direction: column;
+}
+
+.pt3 label{
+    font-family: gbook;
+}
+
+.buttoncalculate button{
+    font-family: gbebas;
+    color: white;
+    font-size: 2em;
+    margin: 20px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fcc55a;
+}
+
+.buttoncalculate button:hover{
+    background-color: #ffb623;
+    box-shadow: 0px 0px 10px rgba(252, 198, 90, 0.603)a;
+}
+
+.wewillneed{
+    margin: 20px;
+    color: #fcc55a;
+}
+
+.wewillneed h3{
+    font-family: gbebas;
+    font-size: 2em;  
+    color: #fcc55a;
+}
+
+.addinformations{
+    font-family: gbook;
+    margin: 20px;
+    color: white;
+}
+
+
+.form-information-result{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.result{
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: #343434;
+}
+
+.needtobuy h2{
+    font-family: gblack;
+    color: white;
+}
+
+.itens-results h2{
+    font-family: gblack;
+    color: #fcc55a;
+}
+
+.meat-result, .soda-result, .beer-result, .coal-result{
+    margin: 15px 60px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.meat-beer, .soda-coal{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itens-results{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.text-result h4{
+    font-family: gblack;
+    color: white;
+    margin: 20px 0px;
+
+}
+
+.observation{
+    font-family: gbold;
+    color: #fcc55a;
+}
+
+.buttonrecalculate button{
+    font-family: gbebas;
+    color: white;
+    font-size: 2em;
+    margin: 20px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fcc55a;
+}
+
+.buttonrecalculate button:hover{
+    background-color: #ffb623;
+    box-shadow: 0px 0px 10px rgba(252, 198, 90, 0.603)a;
+}
+
+/*pt4--------------------------------*/
+
+.pt4{
+    padding: 20px 0px;
+    background-color: #fcc55a;
+}
+
+.pt4 h6{
+    font-family: gbook;
+}
+
+.parrilla-foto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.foto-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

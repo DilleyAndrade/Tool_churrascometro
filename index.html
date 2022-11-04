@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Churrascometro|Dilley Andrade </title>
+</head>
+<body>
+    <div class="pt1">
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <img src="assets/img/white_logo.png" alt="logo Churrascometro">
+                </div>
+                <div class="titledescription">
+                    <h1 class=" currascometro text-center">CHURRASCÔMETRO</h1>
+                    <h6 class="text-center">CALCULE EM POUCOS PASSOS A QUANTIDADE DE CARNE E BEBIDAS PARA O SEU CHURRASCO.</h6>
+                </div>
+                <div class="flags">
+                    <a href="index.html"><img src="assets/img/brazil_flag.png" alt="Brazil_flag"></a>
+                    <a href="englishmode.html"><img src="assets/img/usa_flag.png" alt="Usa_flag"></a>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="pt2">
+        <div class="container">
+            <div class="infotext">
+                <h6 class="text-center">Comprar a quantidade certa de ingredientes para o churrasco não é uma tarefa fácil. Por isso,<br>
+                    criei uma ferramenta para ajudá-lo nas compras e deixar seu churrasco ainda mais gostoso.                </h6>
+            </div>
+        </div>
+    </div>
+    <div class="pt3">
+        <div class="container">
+            <div class="form-information-result">
+                <div class="form">
+                    <div class="howmochneed">
+                        <div class="titlesform">
+                            <h1 class="text-center">Quanto preciso?</h1>
+                        </div>
+                        <h6 class="text-center">Insira a quantidade de pessoas <br>
+                        que irão ao seu churrasco e quantas <br>
+                        horas durará, em média.</h6>
+
+                    </div>
+                    <div class="titlesform">
+                        <h4 class="text-center">Quantas pessoas você vai convidar?</h4>
+                    </div>
+                        
+                    
+                    <div class="form_man">
+                        <label for="inputman">Homens:</label>
+                        <input id="inputman" type="number" placeholder="Insira a quantidade de homens" min="0" pattern="[0-9]">
+                    </div>
+                    <div class="form_woman">
+                        <label for="inputwoman">Mulheres:</label>
+                        <input id="inputwoman" type="number" placeholder="Insira a quantidade de mulheres" min="0" pattern="[0-9]">
+                    </div>
+                    <div class="form_kid">
+                        <label for="inputkid">Crianças:</label>
+                        <input id="inputkid" type="number" placeholder="Insira a quantidade de crianças" min="0" pattern="[0-9]">
+                    </div>
+                    <div class="titlesform">
+                        <h4 class="text-center">Qual será a duração do seu churrasco?</h4>
+                    </div>
+                    <div class="form_time">
+                        <label for="inputtime">Tempo de duração:</label>
+                        <input id="inputtime" type="number" placeholder="Quantas horas durará?" min="0" pattern="[0-9]">
+                    </div>
+                    <div class="titlesform">
+                        <h4 class="text-center">Quantos adultos não bebem Álcool?</h4>
+                    </div>
+                    <div class="form_alcohol">
+                        <label for="inputnoalcohol">Não bebem:</label>
+                        <input id="inputnoalcohol" type="number" placeholder="Adultos que não bebem" min="0" pattern="[0-9]">
+                    </div>
+                    <div class="buttoncalculate text-center">
+                        <button onclick="calculate()"><img src="assets/img/parrilla_icon.png" alt="">CALCULAR CHURRASCO</button>
+                    </div>
+                </div>
+                <div class="information">
+                    <div class="meatimage">
+                        <img class="img-fluid" src="assets/img/barbecue_image.jpg" alt="meat">
+                    </div>
+                    <div class="wewillneed">
+                        <h3>VAMOS TE AJUDAR <br>
+                            A MANDAR BRASA <br>
+                            NO SEU CHURRASCO!</h3>
+                    </div>
+                    <div class="addinformations">
+                        <h6>Preencha as informações, e te <br>
+                            indicaremos uma lista de compras ideal<br>
+                            para o seu churrasco.</h6>
+                    </div>
+                </div>
+                <div class="result">
+                    <div class="needtobuy">
+                        <h2 class="text-center">Você precisará comprar:</h2>
+                    </div>
+                    <div class="itens-results">
+                        <div class="meat-beer">
+                            <div class="meat-result">
+                                <img src="assets/img/meat_icon.png" alt="meat-icon">
+                                <div id="meatresult"></div>
+
+                            </div>
+
+                            <div class="beer-result">
+                                <img src="assets/img/beer_icon.png" alt="meat-icon">
+                                <div id="beerresult"></div>
+                            </div>
+                        </div>
+                        <div class="soda-coal">
+                            <div class="soda-result">
+                                <img src="assets/img/soda_icon.png" alt="meat-icon">
+                                <div id="sodaresult"></div>
+                            </div>
+
+                            <div class="coal-result">
+                                <img src="assets/img/coal_icon.png" alt="meat-icon">
+                                <div id="coalresult"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-result">
+                        <h4 class="text-center">AGORA É A HORA DE PREPARAR O SEU<br>
+                            CHURRASCO PERFEITO.</h4>
+                    </div>
+                    <div class="observation">
+                        <h6 class="text-center">*Os valores apresentados são uma mera estimativa, podendo ser alterados para mais ou para menos de acordo com os convidados.</h6>
+                    </div>
+                </div>
+                <div class="buttonrecalculate text-center">
+                    <button onclick="reset()"><img src="assets/img/parrilla_icon.png" alt="">CALCULAR NOVAMENTE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt4">
+        <div class="container">
+            <div class="finalinformations">
+                <div class="parrilla-foto">
+                    <div class="parrilla-informations">
+                        <div class="parrilla">
+                            <img src="assets/img/black_logo.png" alt="logo">
+                        </div><!-- parrilla-->
+                        <div class="informations-down">
+                            <h6>Criado para facilitar a vida dos apaixonados por um bom churrasco. <br>
+                                Procuramos sempre ajudar a quem deseja realizar um churrasco de<br>
+                                qualidade, otimizando as compras a serem realizadas.
+                                </h6>
+                        </div><!--information down -->
+                    </div><!--parrilla information -->
+                        <div class="foto-details">
+                                <div class="foto">
+                                    <img src="assets/img/my_picture.png" alt="foto">
+                                </div><!--foto -->
+                                <div class="contact">
+                                    <h6>Dilley Andrade/Desenvolvedor Fullstack</h6>
+                                </div><!--contact -->
+                                <div class="logos-social-media">
+                                    <a href="https://github.com/DilleyAndrade" target="_blank"><img src="assets/img/github_icon.png" alt="githublogo"></a>
+                                    <a href="https://www.linkedin.com/in/dilley-andrade-54a163146/" target="_blank"><img src="assets/img/linkedin_icon.png" alt="githublogo"></a>
+                                </div><!-- logos social media-->
+                            </div><!-- foto detail -->
+                        </div><!--parrilla foto -->
+                        <hr>
+                            <div class="copy">
+                                <h6 class="text-center">&copy; Copyright 2022 MeuChurrasco. Desenvolvido por Dilley Andrade. Todos direitos reservados.</h6>
+                            </div>
+            </div><!-- final informations--> 
+        </div><!-- container-->
+    </div><!-- pt4 -->
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
